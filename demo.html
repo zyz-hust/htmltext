@@ -38,12 +38,12 @@
         showMsg('msg');
         }
        <hr />
-     if (sessionStorage.pagecount) {
-      sessionStorage.pagecount = Number(sessionStorage.pagecount) + 1;
+     if (localStorage.pagecount) {
+      localStorage.pagecount = Number(localStorage.pagecount) + 1;
     } else {
-      sessionStorage.pagecount = 1;
+      localStorage.pagecount = 1;
     }
-    document.write('你刷新了本页面 ' + sessionStorage.pagecount + ' 次');
+    document.write('你刷新了本页面 ' + localStorage.pagecount + ' 次');
     </script>
 </body>
 </html>
