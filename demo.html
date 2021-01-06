@@ -37,6 +37,13 @@
     
         showMsg('msg');
         }
+       <hr />
+     if (sessionStorage.pagecount) {
+      sessionStorage.pagecount = Number(sessionStorage.pagecount) + 1;
+    } else {
+      sessionStorage.pagecount = 1;
+    }
+    document.write('你刷新了本页面 ' + sessionStorage.pagecount + ' 次');
     </script>
 </body>
 </html>
